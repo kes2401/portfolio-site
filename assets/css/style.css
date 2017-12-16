@@ -57,7 +57,19 @@ body {
 	transform: scale(1.2);
 }
 
+.ext-nav-link {
+	font-size: 20px;
+	color: #888;
+	height: 24px;
+	width: 24px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	list-style: none;
+}
 
+.nav-link:nth-child(5) {
+	margin-top: 100px;
+}
 
 
 
