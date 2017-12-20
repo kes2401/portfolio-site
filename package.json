@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kes2401/portfolio-site.git"
+  },
+  "author": "Keith Scully",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kes2401/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/kes2401/portfolio-site#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
