@@ -78,7 +78,8 @@ body {
   font-size: 5rem;
   font-weight: 500;
   letter-spacing: 4px;
-  animation: moveInLeft 1.2s ease-out 0.25s; }
+  animation: moveInLeft 1.2s ease-out .75s;
+  animation-fill-mode: backwards; }
 
 .heading-sub {
   color: #eee;
@@ -86,7 +87,8 @@ body {
   font-size: 1.7rem;
   font-weight: 400;
   letter-spacing: 20px;
-  animation: moveInRight 1.2s ease-out 0.25s; }
+  animation: moveInRight 1.2s ease-out .75s;
+  animation-fill-mode: backwards; }
 
 .skill-list {
   margin-top: 70px;
@@ -98,19 +100,19 @@ body {
   backface-visibility: hidden; }
 
 .skill-list li:nth-child(1) {
-  animation: moveInBottom 1s ease-out 0.75s;
-  animation-fill-mode: backwards; }
-
-.skill-list li:nth-child(2) {
   animation: moveInBottom 1s ease-out 1.25s;
   animation-fill-mode: backwards; }
 
-.skill-list li:nth-child(3) {
+.skill-list li:nth-child(2) {
   animation: moveInBottom 1s ease-out 1.75s;
   animation-fill-mode: backwards; }
 
-.skill-list li:nth-child(4) {
+.skill-list li:nth-child(3) {
   animation: moveInBottom 1s ease-out 2.25s;
+  animation-fill-mode: backwards; }
+
+.skill-list li:nth-child(4) {
+  animation: moveInBottom 1s ease-out 3s;
   animation-fill-mode: backwards; }
 
 @keyframes moveInLeft {
