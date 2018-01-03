@@ -51,10 +51,9 @@ body {
   display: list-item;
   color: #aaa;
   text-align: center; }
-
-.nav-link:hover {
-  color: #fff;
-  transform: scale(1.2); }
+  .nav-link:hover {
+    color: #fff;
+    transform: scale(1.2); }
 
 .active {
   color: #fff;
@@ -199,4 +198,8 @@ body {
 .profile-photo {
   width: 60%;
   border-radius: 2px;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  transition: all .25s; }
+  .profile-photo:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 3.2rem rgba(0, 0, 0, 0.6); }

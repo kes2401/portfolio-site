@@ -95,12 +95,15 @@ body {
 	display: list-item;
 	color: #aaa;
 	text-align: center;
+
+	&:hover {
+		color: $colour-white-bright;
+		transform: scale(1.2);
+		
+	}
 }
 
-.nav-link:hover {
-	color: $colour-white-bright;
-	transform: scale(1.2);
-}
+
 
 
 .active {
@@ -294,4 +297,10 @@ body {
 	width: 60%;
 	border-radius: 2px;
 	box-shadow: 0 .5rem 2rem rgba($colour-black, .5);
+	transition: all .25s;
+	
+	&:hover {
+		transform: translateY(-.3rem);
+		box-shadow: 0 1rem 3.2rem rgba($colour-black, .6);
+	}
 }
