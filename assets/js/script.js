@@ -7,3 +7,10 @@ $(document).on('click', 'a[href^="#"]', function(event){
 	}, 1000);
 });
 
+// Add animation on hover
+$('.tech').hover(function(){
+		$(this).addClass('animated tada');
+	}, function() {
+		$(this).removeClass('animated tada');
+	}
+);

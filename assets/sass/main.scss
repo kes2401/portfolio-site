@@ -8,7 +8,8 @@ $colour-medium-black: #222;
 $colour-light-black: #444;
 
 $colour-blue: #2B74E8;
-$colour-blue-light: #5FB2FF;
+$colour-blue-light: #5992ed;
+// #5FB2FF;
 
 // GRID
 $grid-width: 72rem;
@@ -99,7 +100,7 @@ body {
 	&:hover {
 		color: $colour-white-bright;
 		transform: scale(1.2);
-		
+
 	}
 }
 
@@ -301,6 +302,12 @@ body {
 	
 	&:hover {
 		transform: translateY(-.3rem);
-		box-shadow: 0 1rem 3.2rem rgba($colour-black, .6);
+		box-shadow: 0 1rem 3.1rem rgba($colour-black, .6);
 	}
+}
+
+.tech {
+	font-weight: 500;
+	display: inline-block;
+
 }
