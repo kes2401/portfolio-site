@@ -104,6 +104,32 @@ body {
 	}
 }
 
+.int-nav-link {
+	position: relative;
+
+	&::after {
+		content: 'button';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 46%;
+    	left: 0;
+    	font-size: 7px;
+    	text-transform: uppercase;
+		opacity: 0;
+		z-index: -1;
+		transition: all .4s ease-out;
+	
+	}
+
+	&:hover::after {
+		opacity: 100;
+
+	}
+
+}
+
 
 
 
