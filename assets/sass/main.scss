@@ -87,6 +87,7 @@ body {
 	position: fixed;
 	left: 0;
 	padding-top: 32vh;
+	z-index: 100;
 }
 
 .nav-link {
@@ -130,7 +131,9 @@ body {
 
 }
 
-
+.text-white {
+	color: $colour-white-medium !important;
+}
 
 
 .active {
@@ -299,6 +302,14 @@ body {
 	margin: 4rem 0 5rem 0;
 }
 
+.section-subheading {
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+	margin: 1rem 0 2rem 0;
+	color: $colour-blue-light;
+}
+
 .heading-tertiary {
 	font-size: 1rem;
 	font-weight: 600;
@@ -335,5 +346,38 @@ body {
 .tech {
 	font-weight: 500;
 	display: inline-block;
+
+}
+
+.portfolio-item img {
+	width: 100%;
+	border: 4px solid #fff;
+	border-radius: 4px;
+}
+
+.work {
+	background-color: #304b71;
+	padding: 3rem 0 9rem 0;	
+	clip-path: polygon(0 10%, 100% 0, 100% 92%, 0 100%);
+	position: relative;
+
+}
+
+.bg-video {
+	z-index: -100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: .3;
+
+	&-video {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		overflow: hidden;
+		clip-path: polygon(0 10%, 100% 0, 100% 92%, 0 100%);	
+	}
 
 }
