@@ -1,6 +1,6 @@
 .row {
   max-width: 72rem;
-  margin: 0 auto; }
+  margin: 0 10% 0 10%; }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
   .row::after {
@@ -287,3 +287,52 @@ body {
 
 .margin-bottom-sml {
   margin-bottom: 2rem; }
+
+@media (max-width: 1150px) {
+  .contact-subsection {
+    width: 70%; } }
+
+@media (max-width: 980px) {
+  .contact-subsection {
+    width: 100%;
+    clip-path: none; } }
+
+@media (max-width: 800px) {
+  .heading-primary {
+    font-size: 4rem; }
+  .heading-sub {
+    font-size: 1.5rem; }
+  .skill-list {
+    font-size: 1rem; }
+  .section-heading {
+    font-size: 1.4rem; }
+  .section-subheading {
+    font-size: 1.2rem; }
+  .profile-photo {
+    width: 80%; }
+  .email-address {
+    font-size: 1.3rem; }
+  .contact-container {
+    width: 65%;
+    height: 320px; } }
+
+@media (max-width: 640px) {
+  .heading-primary {
+    font-size: 2rem; }
+  .heading-sub {
+    font-size: 1rem;
+    letter-spacing: 6px; }
+  .skill-list {
+    font-size: .75rem; }
+  .section-heading {
+    font-size: 1rem;
+    margin-top: 2rem; }
+  .section-subheading {
+    font-size: .8rem; }
+  .fa-envelope {
+    font-size: 2rem; }
+  .email-address {
+    font-size: .9rem; }
+  .contact-container {
+    width: 80%;
+    height: 220px; } }

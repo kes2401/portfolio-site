@@ -19,7 +19,7 @@ $gutter-horizontal: 4rem;
 
 .row {
 	max-width: $grid-width; // It is common to make the width of a row of 1140px. Here, we know 1 rem is 10px so we use rem here so the width is responsive.
-	margin: 0 auto;
+	margin: 0 10% 0 10%;
 
 	&:not(:last-child){
 		margin-bottom: $gutter-vertical;	
@@ -91,6 +91,18 @@ body {
 	z-index: 100;
 }
 
+// .nav-mobile {
+// 	background-color: $colour-medium-black;
+// 	width: 100vw;
+// 	height: 60px;
+// 	font-size: 28px;
+// 	position: fixed;
+// 	top: 0;
+// 	z-index: 100;
+
+// 	display: none;
+// }
+
 .nav-link {
  	height: 40px;
 	width: 40px; 
@@ -102,7 +114,6 @@ body {
 	&:hover {
 		color: $colour-white-bright;
 		transform: scale(1.2);
-
 	}
 }
 
@@ -136,8 +147,6 @@ body {
 	color: $colour-white-medium !important;
 }
 
-
-
 .active {
 	color: $colour-white-bright;
 	transform: scale(1.2);
@@ -161,9 +170,7 @@ body {
 	margin-left: 52px;
 	font-size: 1rem;
 	text-align: center;
-
 }
-
 
 .header {
 	height: 100vh;
@@ -185,8 +192,7 @@ body {
 .heading {
 	text-transform: uppercase;
 	backface-visibility: hidden;
-	white-space: nowrap;
-	
+	white-space: nowrap;	
 }
 
 .heading-primary {
@@ -197,7 +203,6 @@ body {
 	letter-spacing: 4px;
 	animation: moveInLeft 1.2s ease-out .75s;
 	animation-fill-mode: backwards;
-
 }
 
 .heading-sub {
@@ -210,7 +215,6 @@ body {
 	animation-fill-mode: backwards;
 }
 
-
 .skill-list {
 	margin-top: 70px;
 	color: $colour-white-dark;
@@ -219,7 +223,6 @@ body {
 	font-size: 1.2rem;
 	letter-spacing: 3px;
 	backface-visibility: hidden;
-
 }
 
 .skill-list li:nth-child(1) {
@@ -241,7 +244,6 @@ body {
 	animation: moveInBottom 1s ease-out 3s;
 	animation-fill-mode: backwards;
 }
-
 
 @keyframes moveInLeft {
 	0% {
@@ -285,21 +287,14 @@ body {
 	}
 }
 
-.about {
-
-}
-
-
 .section-heading {
 	font-size: 1.7rem;
 	font-weight: 700;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 	background-image: linear-gradient(to right, $colour-blue-light, $colour-blue);
 	display: inline-block;
 	-webkit-background-clip: text; 
 	color: transparent;
-
 	text-align: center;
 	margin: 4rem 0 5rem 0;
 }
@@ -331,8 +326,6 @@ body {
 	}
 }
 
-
-
 .profile-photo {
 	width: 60%;
 	border-radius: 2px;
@@ -348,7 +341,6 @@ body {
 .tech {
 	font-weight: 500;
 	display: inline-block;
-
 }
 
 .portfolio-item img {
@@ -381,7 +373,6 @@ body {
 		overflow: hidden;
 		clip-path: polygon(0 10%, 100% 0, 100% 92%, 0 100%);	
 	}
-
 }
 
 .contact-container {
@@ -391,10 +382,8 @@ body {
 	margin: 2rem auto 10rem auto;
 	position: relative;
 	margin-top: 8rem;
-
 	background-image: url(../img/luca-zanon-26595.jpg);
 	background-size: cover;
-
 	box-shadow: 0 .25rem 2rem rgba(0,0,0,.5);
 }
 
@@ -410,7 +399,6 @@ body {
 
 .envelope {
 	display: inline-block;
-	
 }
 
 .fa-envelope {
@@ -426,7 +414,7 @@ body {
 }
 
 .form-element {
-	
+	// when form created for Contact section
 }
 
 .footer {
@@ -442,4 +430,111 @@ body {
 }
 
 //Responsive coding
-//...
+
+@media (max-width: 1150px) {
+	.contact-subsection {
+		width: 70%;	
+	}
+}
+
+@media (max-width: 980px) {
+	.contact-subsection {
+		width: 100%;	
+		clip-path: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.heading-primary {
+		font-size: 4rem;
+	}
+
+	.heading-sub {
+		font-size: 1.5rem;
+	}
+
+	.skill-list {
+		font-size: 1rem;
+	}
+
+	.section-heading {
+		font-size: 1.4rem;
+	}
+
+	.section-subheading {
+		font-size: 1.2rem;
+	}
+
+	.profile-photo {
+		width: 80%;
+	}
+
+	.email-address {
+		font-size: 1.3rem;
+	}
+
+	.contact-container {
+		width: 65%;
+		height: 320px;
+	}
+}
+
+@media (max-width: 740px) {
+
+	// THIS IS WHERE MOBILE NAV BAR SHOULD COME IN
+
+	// .nav {
+	// 	display: none;
+	// }
+
+	// .nav-mobile {
+	// 	display: block;
+	// }
+
+	// .main {
+	// 	margin-top: 60px;
+	// 	margin-left: 0;
+	// }
+
+
+}
+
+@media (max-width: 640px) {
+
+	.heading-primary {
+		font-size: 2rem;
+	}
+
+	.heading-sub {
+		font-size: 1rem;
+		letter-spacing: 6px;
+	}
+
+	.skill-list {
+		font-size: .75rem;
+	}
+
+	.section-heading {
+		font-size: 1rem;
+		margin-top: 2rem;
+	}
+
+	.section-subheading {
+		font-size: .8rem;
+	}
+
+	.fa-envelope {
+		font-size: 2rem;
+	}
+
+	.email-address {
+		font-size: .9rem;
+	}
+
+	.contact-container {
+		width: 80%;
+		height: 220px;
+	}
+
+
+}
