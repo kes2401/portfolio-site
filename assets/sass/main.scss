@@ -20,7 +20,7 @@ $gutter-horizontal: 4rem;
 .row {
 	max-width: $grid-width; // It is common to make the width of a row of 1140px. Here, we know 1 rem is 10px so we use rem here so the width is responsive.
 	margin: 0 10% 0 10%;
-
+	
 	&:not(:last-child){
 		margin-bottom: $gutter-vertical;	
 	}
@@ -536,5 +536,17 @@ body {
 		height: 220px;
 	}
 
+	// .col-1-of-3 {
+	// 	clear: both;
+	// }
+
+	// img {
+	// 	width: 300px;
+	// 	margin: 0 auto;
+	// }
+
+	.row:not(:last-child) {
+		margin-bottom: 0;
+	}
 
 }

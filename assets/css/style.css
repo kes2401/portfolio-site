@@ -335,4 +335,6 @@ body {
     font-size: .9rem; }
   .contact-container {
     width: 80%;
-    height: 220px; } }
+    height: 220px; }
+  .row:not(:last-child) {
+    margin-bottom: 0; } }
